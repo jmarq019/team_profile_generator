@@ -24,7 +24,6 @@ async function init(){
             data = await inquirer.prompt(questionsArray);
             let newManager = new Manager(data.name, data.id, data.email, data.officeNumber);
             managerArray.push(newManager);
-            console.table(managerArray);
             init();
             break;
 
@@ -33,7 +32,6 @@ async function init(){
             data = await inquirer.prompt(questionsArray);
             let newEngineer = new Engineer(data.name, data.id, data.email, data.github);
             engineerArary.push(newEngineer);
-            console.table(engineerArary);
             init();
             break;
 
@@ -42,20 +40,16 @@ async function init(){
             data = await inquirer.prompt(questionsArray);
             let newIntern = new Intern(data.name, data.id, data.email, data.school);
             internArray.push(newIntern);
-            console.table(internArray);
             init();
             break;
 
         default :
-            console.log("Goodbye!");
+            
             let newTeam = generateTeam([...managerArray,...internArray,...engineerArary]);
-            
             fs.writeFile(`index.html`, newTeam, (err) =>
-    
-            err ? console.error(err) : console.log('Success!')
-            
+            err ? console.error(err) : console.log('Team page created successfully!')
             );
-
+            console.log("Goodbye!");
             break;
     }
 
