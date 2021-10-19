@@ -17,6 +17,6 @@ The information is entered through the command line and then the corresponding i
 
 ![a screenshot of an html file written by my app](./assets/images/screenshot.png)
 ## Credits
-Credits to the UW coding bootcamp instructor and TA's for teaching the knowledge necessary to build this application. (NPM Node registry)[https://docs.npmjs.com/] is also credited as packages from it were used. 
+Credits to the UW coding bootcamp instructor and TA's for teaching the knowledge necessary to build this application. [NPM Node registry](https://docs.npmjs.com/) is also credited as packages from it were used. 
 ## Tests
 Testing was conducted by running the application.
