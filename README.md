@@ -19,4 +19,4 @@ The information is entered through the command line and then the corresponding i
 ## Credits
 Credits to the UW coding bootcamp instructor and TA's for teaching the knowledge necessary to build this application. [NPM Node registry](https://docs.npmjs.com/) is also credited as packages from it were used. 
 ## Tests
-Testing was conducted by running the application.
+Testing was conducted by running the application. A test suite was also provided with tests for the classes that were to be built as part of this project.
